@@ -117,8 +117,6 @@ class SimpleDatePicker {
                             this.cal.date_selected.setDate(this.selected_day);
                             this.cal.date_selected.setMonth(this.selected_month);
                             this.cal.date_selected.setFullYear(this.selected_year);
-                            console.log(this.selected_day)
-                            console.log(this.cal.date_selected)
                         };
                         day++
                     }

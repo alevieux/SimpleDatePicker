@@ -4,9 +4,9 @@ A Simple JS Date Picker
 Project inspired by : [jsSimpleDatePickr](https://blog.niap3d.com/calendrier-javascript/)
 
 #Usage 
-``````
-<link rel="stylesheet" href="jsSimpleDataPickr.2.1.css">
-<script type="text/javascript" src="jsSimpleDataPickr2.1.review.js"></script>
+```
+<link rel="stylesheet" href="SimpleDatePickerjs.css">
+<script type="text/javascript" src="SimpleDatePicker.js"></script>
 
 <div id="calendarMain" class="calendarMain"></div>
 <script type="text/javascript">

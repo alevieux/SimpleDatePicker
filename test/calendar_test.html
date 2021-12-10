@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SimpleDatePicker Test</title>
+    <link rel="stylesheet" href="../src/SimpleDatePicker.css">
+    <script type="text/javascript" src="../src/SimpleDatePicker.js"></script>
+</head>
+<body>
+    <div id="calendarMain" class="calendarMain"></div>
+    <script type="text/javascript">
+
+        var date_max = new Date();
+        date_max.setMonth(date_max.getMonth()+2);
+        var date_min = new Date();
+        date_min.setMonth(date_min.getMonth()-1);
+        var option = {'date_min' : date_min, 'date_max' : date_max};
+        var myCalendar = new SimpleDatePicker('calendarMain', option);
+    </script>
+</body>
+</html>
