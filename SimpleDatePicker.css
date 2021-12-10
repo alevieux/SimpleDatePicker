@@ -1,0 +1,78 @@
+.calendarMain{
+    font-family: "Helvetica Neue", Helvetica, Geneva, sans-serif;
+    text-align: left;
+}
+.calendarMain:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.calendarMain > div{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-size: 12px;
+}
+
+.calendarMain > input{
+    display: block;
+    height: 22px;
+    padding-top: 2px;
+    background-color: #2e373f;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+.calendarMain > input:hover{
+    background-color: #1083FF;
+}
+
+.calendarNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.calendarNav input{
+    margin: 5px 0 10px 0;
+    background-color: transparent;
+    border: none;
+}
+.calendarNav input:hover{
+    background-color: #1083FF;
+}
+.calendarNav .calendarNavMR, .calendarNav .calendarNavYR{
+    float: right;
+}
+
+.calendarMain{
+    width: 100%;
+    padding: 10px 0px;
+    border-top: 2px solid #1083FF;
+    border-bottom: 2px solid #1083FF;
+}
+.calendarMain th{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+.calendarMain td{
+    border: none;
+    width: 30px;
+    padding: 3px 0 3px 0;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.calendarMain .day:hover{
+    background-color: #1083FF;
+    border-color: #1083FF;
+}
+.calendarMain .selectedDay{
+    background-color: #82CA3F;
+    border-color: #82CA3F;
+    color: white;
+}
+.calendarMain .calendar_table {
+    width: 100%;
+}
