@@ -3,7 +3,7 @@ A Simple JS Date Picker
 
 Project inspired by : [jsSimpleDatePickr](https://blog.niap3d.com/calendrier-javascript/)
 
-#Usage 
+# Usage 
 ```
 <link rel="stylesheet" href="SimpleDatePickerjs.css">
 <script type="text/javascript" src="SimpleDatePicker.js"></script>
