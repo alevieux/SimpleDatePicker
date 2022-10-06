@@ -11,8 +11,6 @@ class SimpleDatePicker {
 
         this.option = option;
 
-        this.month_fr = ['Janvier','Février','Mars','Avril','Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', "Décembre"];
-        this.list_days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi','Samedi', 'Dimanche'];
         this.init_calendar();
 
     }
@@ -69,18 +67,21 @@ class SimpleDatePicker {
 
         let week_line_calendar_table = this.add_dom_element('tr', {'parent': this.calendar_table});
 
-        this.list_days.forEach(day => this.add_dom_element('th', {'parent': week_line_calendar_table, 'content':day}));
+        this.option.day_name.forEach(day => this.add_dom_element('th', {'parent': week_line_calendar_table, 'content':day}));
         this.display_current_date();
     }
 
-    display_current_date(){
-
+    remove_day_on_calendar() {
         let nb_node = this.calendar_table.childNodes.length;
         for(let k =1;k<nb_node;k++){
             this.calendar_table.removeChild(this.calendar_table.childNodes[1])
         }
+    }
 
-        document.getElementById('calendarTitle'+this.id).innerHTML = this.month_fr[this.date.getMonth()]+" "+this.date.getFullYear();
+    display_current_date(){
+        this.remove_day_on_calendar()
+
+        document.getElementById('calendarTitle'+this.id).innerHTML = this.option.month_name[this.date.getMonth()]+" "+this.date.getFullYear();
 
         let work_date = new Date(this.date);
         work_date.setDate(1);
